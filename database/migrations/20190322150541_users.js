@@ -1,4 +1,3 @@
-
 exports.up = knex =>
     knex.schema.createTable('users', table => {
         table.string('id', 50)
@@ -10,4 +9,5 @@ exports.up = knex =>
         table.string('email')
     })
 
-exports.down = knext => knex.schema.dropTableIfExists('users')
+
+exports.down = knex => knex.schema.dropTableIfExists('users')
