@@ -5,7 +5,7 @@ const morgan = require("morgan")
 const cors = require("cors")
 const helmet = require("helmet")
 
-const authenticate = require('./customMiddleware/authenticate')
+// const authenticate = require('./customMiddleware/authenticate')
 
 module.exports = server => {
     server.use(passport.initialize())
@@ -13,5 +13,5 @@ module.exports = server => {
     server.use(helmet())
     server.use(cors())
     server.use(morgan("dev"))
-    server.use(authenticate)
+    // server.use(authenticate)
 }

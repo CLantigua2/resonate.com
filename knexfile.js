@@ -8,6 +8,7 @@ module.exports = {
       filename: './dev.sqlite3'
     }
   },
+  useNullAsDefault: true,
 
   staging: {
     client: 'postgresql',
@@ -28,7 +29,6 @@ module.exports = {
       directory: './database/seeds'
     }
   },
-
   production: {
     client: 'postgresql',
     connection: {
