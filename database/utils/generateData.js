@@ -9,12 +9,15 @@ const generateUser = () => {
         last_name: faker.name.lastName(),
         role: 'user',
         email: faker.internet.email(),
-        userImg: faker.image.avatar()
     }
 }
 
-const accumulate = (cb, i) => {
-    i > 0 ? [cb()].concat(accumulate(cb, i - 1)) : []
+function accumulate(cb, iteration) {
+	if (iteration > 0) {
+		return [cb()].concat(accumulate(cb, iteration - 1));
+	} else {
+		return [];
+	}
 }
 
 const users = accumulate(generateUser, 50)
