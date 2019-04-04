@@ -8,14 +8,6 @@ const helmet = require("helmet")
 
 // const authenticate = require('./customMiddleware/authenticate')
 
-// config mysql connection
-// const db = mysql.createConnection({
-//     host: 'localhost',
-//     user: 'user',
-//     password:,
-//     database:
-// })
-
 module.exports = server => {
     server.use(passport.initialize())
     server.use(express.json())

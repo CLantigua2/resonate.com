@@ -1,14 +1,12 @@
 import React from 'react';
 
-class FooterLinks extends React.Component {
-  render() {
-  	return (
-        <div className="footer-alt">
+const FooterLinks = () => (
+    <div className="footer-alt">
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
                     <div className="float-left pull-none ">
-                        <p className="copy-rights text-muted">{(new Date().getFullYear())} © Dorsin - Themesbrand</p>
+                        <p className="copy-rights text-muted">{(new Date().getFullYear())} © Conquer - CRM</p>
                     </div>
                     <div className="float-right pull-none ">
                         <img src="images/payment.png" alt="payment-img" height="36" />
@@ -18,7 +16,6 @@ class FooterLinks extends React.Component {
             </div>
         </div>
     </div>
-  	);
-  }
-}
+);
+
 export default FooterLinks;
