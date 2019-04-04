@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class Pricing extends React.Component {
-  render() {
-  	return (
-        <section className="section pt-5" id="pricing">
+const Pricing = () => (
+    <section className="section pt-5" id="pricing">
         <div className="container">
             <div className="row">
                 <div className="col-lg-8 offset-lg-2">
@@ -65,7 +63,6 @@ class Pricing extends React.Component {
             </div>
         </div>
     </section>
-  	);
-  }
-}
+);
+
 export default Pricing;

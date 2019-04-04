@@ -1,9 +1,7 @@
 import React from 'react';
 
-class Contact extends React.Component {
-  render() {
-  	return (
-        <section className="section" id="contact">
+const Contact = () => (
+    <section className="section" id="contact">
         <div className="container">
             <div className="row">
                 <div className="col-lg-8 offset-lg-2">
@@ -16,7 +14,7 @@ class Contact extends React.Component {
                 <div className="col-lg-4">
                     <div className="mt-4 pt-4">
                         <p className="mt-4"><span className="h5">Office Address 1:</span><br /> <span className="text-muted d-block mt-2">4461 Cedar Street Moro, AR 72368</span></p>
-                        <p className="mt-4"><span className="h5">Office Address 2:</span><br /> <span className="text-muted d-block mt-2">2467 Swick Hill Street <br/>New Orleans, LA 70171</span></p>
+                        <p className="mt-4"><span className="h5">Office Address 2:</span><br /> <span className="text-muted d-block mt-2">2467 Swick Hill Street <br />New Orleans, LA 70171</span></p>
                         <p className="mt-4"><span className="h5">Working Hours:</span><br /> <span className="text-muted d-block mt-2">9:00AM To 6:00PM</span></p>
                     </div>
                 </div>
@@ -34,7 +32,7 @@ class Contact extends React.Component {
                                     <div className="form-group mt-2">
                                         <input name="email" id="email" type="email" className="form-control" placeholder="Your email*" />
                                     </div>
-                                </div>                                
+                                </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-12">
@@ -57,12 +55,11 @@ class Contact extends React.Component {
                                 </div>
                             </div>
                         </form>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
-    </section> 
-  	);
-  }
-}
+    </section>
+);
+
 export default Contact;

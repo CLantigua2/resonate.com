@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class Features extends React.Component {
-  render() {
-  	return (
-        <section className="section bg-light" id="features">
+const Features = () => (
+    <section className="section bg-light" id="features">
         <div className="container">
             <div className="row vertical-content">
                 <div className="col-lg-5">
@@ -28,7 +26,6 @@ class Features extends React.Component {
             </div>
         </div>
     </section>
-  	);
-  }
-}
+);
+
 export default Features;

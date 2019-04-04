@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class Process extends React.Component {
-  render() {
-  	return (
-        <section className="section bg-light">
+const Process = () => (
+    <section className="section bg-light">
         <div className="container">
             <div className="row">
                 <div className="col-lg-8 offset-lg-2">
@@ -44,12 +42,11 @@ class Process extends React.Component {
                     </div>
                 </div>
                 <div className="text-center mx-auto">
-                <Link to="JavaScript:Void(0);" className="btn btn-custom waves-light waves-effect margin-t-50">Get Started <i className="mdi mdi-arrow-right"></i></Link>
+                    <Link to="JavaScript:Void(0);" className="btn btn-custom waves-light waves-effect margin-t-50">Get Started <i className="mdi mdi-arrow-right"></i></Link>
                 </div>
             </div>
         </div>
     </section>
-  	);
-  }
-}
+);
+
 export default Process;
