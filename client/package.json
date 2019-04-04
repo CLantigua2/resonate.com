@@ -1,10 +1,13 @@
 {
-  "name": "client",
+  "name": "dorsin_react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-build": "^1.0.8",
+    "react-dom": "^16.8.6",
+    "react-particles-js": "^2.5.1",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"
   },
   "scripts": {

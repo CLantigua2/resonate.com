@@ -1,7 +1,26 @@
 // Update with your config settings.
 
 module.exports = {
-
+  // client: 'mysql',
+  // connection: {
+  //   host: 'localhost',
+  //   user: 'root',
+  //   password: 'Explode#7',
+  //   database: 'development'
+  // },
+  // testing: {
+  // 	client: 'sqlite3',
+  // 	connection: {
+  // 		filename: './database/test.db3',
+  // 	},
+  // 	useNullAsDefault: true,
+  // 	migrations: {
+  // 		directory: './database/migrations',
+  // 	},
+  // 	seeds: {
+  // 		directory: './database/seeds',
+  // 	},
+  // },
   development: {
 		client: 'sqlite3',
 		connection: {
@@ -14,20 +33,7 @@ module.exports = {
 		seeds: {
 			directory: './database/seeds',
 		},
-	},
-	testing: {
-		client: 'sqlite3',
-		connection: {
-			filename: './database/test.db3',
-		},
-		useNullAsDefault: true,
-		migrations: {
-			directory: './database/migrations',
-		},
-		seeds: {
-			directory: './database/seeds',
-		},
-	},
+  },
 
   staging: {
     client: 'mysql',
