@@ -1,28 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import HomeFour from './HomeFour';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+import Login from './Login';
+import SignUp from './SignUp';
+import PasswordForget from './PasswordForget';
+
+const App = () => (
+  <BrowserRouter basename={'/'} >
+    <Switch>
+      <Route exact path={`${process.env.PUBLIC_URL}/`} component={HomeFour} />
+      <Route path={`${process.env.PUBLIC_URL}/login`} component={Login} />
+      <Route path={`${process.env.PUBLIC_URL}/password-forget`} component={PasswordForget} />
+      <Route path={`${process.env.PUBLIC_URL}/sign-up`} component={SignUp} />
+    </Switch>
+  </BrowserRouter>
+);
+
 
 export default App;
